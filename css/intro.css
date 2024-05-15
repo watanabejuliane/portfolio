@@ -1,0 +1,82 @@
+.introduction {
+    max-width: 1200px;
+    padding:  40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.introduction h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.introduction h1::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 115px;
+    background: url('../img/detail.webp') no-repeat center;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: -1;
+    opacity: 85%;
+}
+
+.introduction p {
+    font-size: 1.5rem;
+    color: #2f2f2f;
+}
+
+@media (max-width: 1000px) {
+    .introduction h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .introduction {
+        grid-template-columns:  1fr 1fr;
+        gap: 40px
+    }
+    .introduction h1 {
+        font-size: 2rem;
+    }
+
+    .introduction h1::before {
+        width: 200px;
+        height: 60px;
+        left: -15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .introduction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction h1::before {
+        width: 195px;
+        height: 55px;
+        top: -9px;
+        left: -15px;
+    }
+    .introduction h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .introduction p {
+        font-size: 1.25rem;
+    }
+    .introduction img {
+        width: 85%;
+    }
+
+}

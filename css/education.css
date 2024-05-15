@@ -1,0 +1,164 @@
+.education {
+    background: #CCCCCC;
+}
+.education-container {
+        max-width: 1200px;
+        padding:  120px 20px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 100px;
+}
+
+
+.education .subtitle {
+    color: #6343BC;
+}
+
+.education-text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #7255C3;
+}
+
+.education-text strong {
+    color: #6343BC;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.course {
+    background: #F2F2F2;
+    padding: 20px;
+    border-radius: 4px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.course-type {
+    font-size: .875rem;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    margin-bottom: 10px;
+}
+
+.course-name {
+    flex: 1;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.course-name::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#B09FDF, #A18DD8);
+    position: absolute;
+    left: -24px;
+    top: 2px;
+}
+
+.course-institution {
+    font-size: 1.125rem;
+    color: #2f2f2f;
+}
+
+.extra-education {
+    margin-bottom: 60px;
+    margin-left: 4%;
+}
+
+
+
+.bootcamps {
+    margin-bottom: 70px;
+}
+
+.bootcamps h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #2f2f2f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.languages h3{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #2f2f2f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.extra-education h3::before {
+display: block;
+content: "";
+width: 24px;
+height: 24px;
+position: absolute;
+left: -30px;
+top: -4px;
+}
+
+.bootcamps h3::before{
+    background: url("../img/books.png") no-repeat center;
+}
+
+.languages h3::before{
+    background: url("../img/languages.png") no-repeat center;
+}
+
+.extra-education li {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.extra-education span {
+    color:#7255C3;
+
+}
+
+.bootcamps li {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    .education-container {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .education-text  {
+        font-size: 1.25rem;
+    }
+
+    .extra-education {
+        margin-left: 0;
+    }
+
+    .extra-education h3::before {
+        left: 0px;
+        top: -35px;
+        margin-bottom: 10px;
+        }
+
+    .extra-education h3 {
+        margin-bottom: 14px;
+    }
+}
+
